@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path(),
     path('books/Hebrew', views.BookListView.as_view(), name='books'),
     path('book/<int:pk>', views.BookDetailView.as_view(), name='book-detail'),
     path('book/Japanese', views.BokListView.as_view(), name='book'),
